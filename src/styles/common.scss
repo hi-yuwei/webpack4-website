@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  background: yellow;
+}
+
+.main {
+  min-width: 1200px;
+}
+
+.header {
+  position: relative;
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+    }
+
+    .menu {
+    }
+  }
+
+  .banner {
+    height: 400px;
+    background: greenyellow;
+  }
+}
