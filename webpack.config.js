@@ -69,7 +69,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -78,6 +78,9 @@ module.exports = {
             loader: "url-loader",
             options: {
               limit: 5000
+            },
+            options: {
+              publicPath: "/"
             }
           }
         ]
