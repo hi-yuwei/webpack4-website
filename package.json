@@ -36,6 +36,11 @@
     "postcss-loader": "^3.0.0",
     "webpack-dev-server": "^3.9.0"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "babel": {
     "presets": [
       "@babel/env"
