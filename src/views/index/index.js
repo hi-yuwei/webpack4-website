@@ -2,16 +2,26 @@ import "@/styles/reset.css"
 import "@/styles/common.scss"
 import "@/styles/index.scss"
 
-let str = "sldldjdlaladdd"
-console.log(str.startsWith("1sdd"))
-console.log(1111)
-
 $("#info")
   .text("这是jquery添加的")
   .css({ color: "red" })
 
-let funs = () => {
-  console.log(1111)
+let getX = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("5")
+    }, 3000)
+  })
 }
 
-funs()
+async function Add() {
+  let result = await getX()
+  console.log(result)
+  console.log(3333)
+
+  return result + 333
+}
+
+Add().then(res => {
+  console.log(res)
+})
