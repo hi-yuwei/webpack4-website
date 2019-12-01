@@ -25,3 +25,5 @@ async function Add() {
 Add().then(res => {
   console.log(res)
 })
+
+console.log(SERVICE_URL)
