@@ -53,6 +53,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.ejs/,
+        use: ["ejs-loader"]
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
       },
@@ -75,7 +79,7 @@ module.exports = {
           {
             loader: "url-loader",
             options: {
-              limit: 1024 * 1,
+              limit: 1024 * 5,
               name: "[name]-[hash:8].[ext]",
               outputPath: "images/" //指定放置目标文件的文件系统路径
             }
@@ -127,7 +131,7 @@ module.exports = {
     // 设置html模板生成路径
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/views/index/index.html",
+      template: "./src/views/index/index.ejs",
       minify: { collapseWhitespace: true, removeComments: true },
       chunks: ["jquery", "index"]
     }),
