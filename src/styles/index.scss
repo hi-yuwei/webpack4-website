@@ -55,6 +55,25 @@
           width: 100%;
           height: inherit;
           backface-visibility: hidden;
+          .product-logo {
+            position: relative;
+            padding: 94px 0 36px;
+            img {
+              width: auto;
+              height: 51px;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 36px;
+              height: 1px;
+              background: #06bcd0;
+              transform: translateX(-50%);
+            }
+          }
+
           .product-item-title {
             padding: 26px 0;
             font-size: 18px;

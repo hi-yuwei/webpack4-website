@@ -32,7 +32,8 @@ function getNetworkIp() {
 module.exports = {
   // 入口js路径
   entry: {
-    index: "./src/views/index/index.js"
+    index: "./src/views/index/index.js",
+    productService: "./src/views/productService/index.js"
   },
 
   // 编译输出配置
@@ -136,9 +137,9 @@ module.exports = {
       chunks: ["jquery", "index"]
     }),
     new HtmlWebpackPlugin({
-      filename: "login.html",
-      template: "./src/views/login/index.html",
-      chunks: ["login"]
+      filename: "productService.html",
+      template: "./src/views/productService/index.ejs",
+      chunks: ["jquery", "index", "productService"]
     }),
     new CopyWebpackPlugin([{ from: "./src/static", to: "static" }]),
     // 分离样式到css文件
