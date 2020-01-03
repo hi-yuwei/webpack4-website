@@ -116,6 +116,26 @@
   }
 }
 
+.swiper-pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  .swiper-pagination-item {
+    float: left;
+    width: 25px;
+    height: 2px;
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.5);
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .swiper-pagination-active {
+    background: #fff;
+  }
+}
+
 .footer {
   padding-top: 90px;
   height: 356px;

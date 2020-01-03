@@ -2,28 +2,18 @@ import "@/styles/reset.css"
 import "@/styles/common.scss"
 import "@/styles/index.scss"
 
-$("#info")
-  .text("这是jquery添加的")
-  .css({ color: "red" })
+import Swiper from "swiper"
+import "swiper/css/swiper.min.css"
 
-let getX = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("5")
-    }, 3000)
+$(document).ready(function() {
+  var mySwiper = new Swiper(".swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+      bulletClass: "swiper-pagination", //需设置.my-bullet样式
+      bulletActiveClass: "swiper-pagination-active"
+    },
+    autoplay: true
   })
-}
-
-async function Add() {
-  let result = await getX()
-  console.log(result)
-  console.log(3333)
-
-  return result + 333
-}
-
-Add().then(res => {
-  console.log(res)
 })
 
 console.log(SERVICE_URL)
