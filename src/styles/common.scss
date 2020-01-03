@@ -115,3 +115,36 @@
     }
   }
 }
+
+.footer {
+  padding-top: 90px;
+  height: 356px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #1f2737;
+  .footer-content {
+    max-width: 1215px;
+  }
+  .footer-nav {
+    margin-bottom: 54px;
+    .footer-nav-item {
+      float: left;
+      width: 84px;
+      margin: 0 78px;
+      .nav-item-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      .nav-item-option {
+        > li {
+          height: 30px;
+          line-height: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+}
