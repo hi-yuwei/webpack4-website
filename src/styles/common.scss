@@ -121,8 +121,8 @@
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  .swiper-pagination-item {
-    float: left;
+  .my-bullet {
+    display: inline-block;
     width: 25px;
     height: 2px;
     cursor: pointer;
@@ -131,7 +131,7 @@
       margin-right: 10px;
     }
   }
-  .swiper-pagination-active {
+  .my-bullet-active {
     background: #fff;
   }
 }

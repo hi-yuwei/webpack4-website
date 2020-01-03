@@ -7,10 +7,12 @@ import "swiper/css/swiper.min.css"
 
 $(document).ready(function() {
   var mySwiper = new Swiper(".swiper-container", {
+    // 如果需要分页器
     pagination: {
       el: ".swiper-pagination",
-      bulletClass: "swiper-pagination", //需设置.my-bullet样式
-      bulletActiveClass: "swiper-pagination-active"
+      clickable: true,
+      bulletClass: "my-bullet",
+      bulletActiveClass: "my-bullet-active"
     },
     autoplay: true
   })
