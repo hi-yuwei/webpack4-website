@@ -12,10 +12,28 @@
       <div class="content">
         <%= require('../template/header/index.ejs')() %>
         <div class="main product-type">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="product-list clearfix">
+            <li>
+              <div class="product-list-logo"><img src="<%= require('../../images/product_idefend_logo.png') %>" /></div>
+              <div class="product-list-content">
+                <p class="product-list-name">iDefend</p>
+                <p class="product-list-txt">数据智能决策平台</p>
+              </div>
+            </li>
+            <li>
+              <div class="product-list-logo"><img src="<%= require('../../images/product_icredit_logo.png') %>" /></div>
+              <div class="product-list-content">
+                <p class="product-list-name">iCredit</p>
+                <p class="product-list-txt">信贷业务系统</p>
+              </div>
+            </li>
+            <li>
+              <div class="product-list-logo"><img src="<%= require('../../images/product_gorupee_logo.png') %>" /></div>
+              <div class="product-list-content">
+                <p class="product-list-name">GoRupee</p>
+                <p class="product-list-txt">金融开放平台</p>
+              </div>
+            </li>
           </ul>
         </div>
         <%= require('../template/footer/index.ejs')() %>
