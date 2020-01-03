@@ -1,31 +1,32 @@
-.product-service {
-  padding: 85px 0;
-  .product-service-content {
-    .product-service-title {
-      text-align: center;
-      .title-en {
-        font-size: 28px;
-        color: #444;
-        i {
-          margin: 0 16px;
-          &::before,
-          &::after {
-            content: "";
-            display: inline-block;
-            margin: 0 2px;
-            width: 2px;
-            height: 20px;
-            background: #444;
-            transform: skew(-20deg, 0);
-          }
-        }
-      }
-      .title-ch {
-        padding: 14px 0;
-        font-size: 24px;
-        color: #191c3d;
+.module-title {
+  text-align: center;
+  .title-en {
+    font-size: 28px;
+    color: #444;
+    i {
+      margin: 0 16px;
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        margin: 0 2px;
+        width: 2px;
+        height: 20px;
+        background: #444;
+        transform: skew(-20deg, 0);
       }
     }
+  }
+  .title-ch {
+    padding: 14px 0;
+    font-size: 24px;
+    color: #191c3d;
+  }
+}
+
+.product-service {
+  padding: 85px 0 35px;
+  .product-service-content {
     .product-list {
       padding: 50px 0;
       > li {
@@ -136,6 +137,37 @@
       }
       &:not(:last-child) {
         border-right: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.cooperation {
+  padding: 85px 0;
+  height: 1034px;
+  text-align: center;
+  background: url("~@/images/cooperation_bg.png") no-repeat;
+  .cooperation-content {
+    max-width: 1215px;
+    margin: 0 auto;
+    .slogan {
+      margin-top: 50px;
+      font-size: 18px;
+      color: #191c3d;
+    }
+    .cooperation-list {
+      > li {
+        float: left;
+        margin-top: 40px;
+        width: 291px;
+        height: 130px;
+        &:not(:nth-child(4n)) {
+          margin-right: 17px;
+        }
+        &:hover {
+          box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+        }
       }
     }
   }
