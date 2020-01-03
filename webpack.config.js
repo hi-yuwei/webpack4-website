@@ -110,8 +110,8 @@ module.exports = {
           chunks: "all"
         }
       }
-    },
-    minimizer: [new UglifyJsPlugin({ cache: true, parallel: true, sourceMap: true }), new OptimizeCssAssetsPlugin()]
+    }
+    // minimizer: [new UglifyJsPlugin({ cache: true, parallel: true, sourceMap: true }), new OptimizeCssAssetsPlugin()]
   },
 
   resolve: {

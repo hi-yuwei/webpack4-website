@@ -1,136 +1,142 @@
-.nav {
-  position: absolute;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  line-height: 70px;
-  color: #fff;
-
-  &:hover {
-    background: #333;
-  }
-
-  .nav-logo {
-    width: 128px;
-    a {
-      display: block;
-    }
-    img {
-      width: 100%;
-      vertical-align: middle;
-    }
-  }
-  .nav-menu {
-    width: 645px;
-
-    > li {
-      float: left;
-      line-height: 68px;
-      padding: 0 20px;
-      cursor: pointer;
-      border-bottom: 2px solid transparent;
-      .nav-submenu {
-        display: none;
-        position: absolute;
-        bottom: -200px;
-        left: 0;
-        width: 100%;
-        height: 200px;
-        background: #333;
+.product-service {
+  padding: 85px 0;
+  .product-service-content {
+    .product-service-title {
+      text-align: center;
+      .title-en {
+        font-size: 28px;
+        color: #444;
+        i {
+          margin: 0 16px;
+          &::before,
+          &::after {
+            content: "";
+            display: inline-block;
+            margin: 0 2px;
+            width: 2px;
+            height: 20px;
+            background: #444;
+            transform: skew(-20deg, 0);
+          }
+        }
       }
-      &:hover {
-        border-color: #2855f0;
-        .nav-submenu {
-          display: block;
+      .title-ch {
+        padding: 14px 0;
+        font-size: 24px;
+        color: #191c3d;
+      }
+    }
+    .product-list {
+      padding: 50px 0;
+      > li {
+        position: relative;
+        float: left;
+        width: 330px;
+        height: 397px;
+        text-align: center;
+        cursor: default;
+        transform-style: preserve-3d;
+        &:not(:last-child) {
+          margin-right: 188px;
+        }
+        .item {
+          position: relative;
+          width: 100%;
+          height: inherit;
+          transform-style: preserve-3d;
+          transition: 0.6s;
+        }
+        .item-card {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 50px;
+          width: 100%;
+          height: inherit;
+          backface-visibility: hidden;
+          .product-item-title {
+            padding: 26px 0;
+            font-size: 18px;
+            color: #303351;
+          }
+          .product-item-content {
+            line-height: 26px;
+            font-size: 14px;
+            color: #474964;
+          }
+        }
+
+        .item-front {
+          background: url("~@/images/product_service_front_bg.png") no-repeat center;
+        }
+        .item-back {
+          color: #fff;
+          background: url("~@/images/product_service_back_bg.png") no-repeat center;
+          transform: rotateY(-180deg);
+          .product-item-title {
+            position: relative;
+            color: #fff;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 62px;
+              height: 1px;
+              background: #fff;
+              transform: translateX(-50%);
+            }
+          }
+          .product-item-content {
+            padding: 36px 0 30px;
+            text-align: justify;
+            color: #fff;
+          }
+          .product-service-btn {
+            display: inline-block;
+            width: 114px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 15px;
+            background: #06bcd0;
+          }
+        }
+        &:hover {
+          .item {
+            transform: rotateY(180deg);
+          }
         }
       }
     }
   }
-  .nav-right {
-    padding: 0 30px;
-    .lang {
-      position: relative;
-      cursor: pointer;
-      .lang-options {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        line-height: 2;
-        background: #333;
-      }
-    }
-    .login {
-      margin: 0 20px;
-      font-size: 12px;
-    }
-    .apply-now {
-      padding: 8px 14px;
-
-      color: #fff;
-      background: #2855f0;
-      border-radius: 2px;
-    }
-  }
 }
 
-.banner {
-  color: #fff;
-  .banner-item {
-    position: relative;
-    .banner-title {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 1.8;
-    }
-    .banner-introduce {
-      padding: 40px 0 80px;
-    }
-    .banner-btn-goDetails {
-      padding: 10px 30px;
-      background: #2855f0;
-      border-radius: 5px;
-    }
-    .banner-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: 0 auto;
-      width: 100%;
-      padding: 160px 40px 0;
-    }
-  }
-}
-
-.ai {
-  font-size: 14px;
-  color: #555f73;
-  .ai-content {
-    padding: 40px 0;
+.data {
+  padding: 24px 0;
+  height: 293px;
+  background: url("~@/images/data_bg.png") no-repeat center / 100%;
+  .data-content {
+    color: #fff;
     text-align: center;
-    background: url("https://official-static.tongdun.cn/officialv3/home/ai/img_AI.png") no-repeat center bottom / 500px;
-    .ai-title {
-      font-size: 40px;
-    }
-    .ai-text {
-      padding: 30px 0 60px;
-    }
-    .ai-items {
-      padding: 40px 0;
-    }
-    .ai-icon {
-      width: 44px;
-      height: 44px;
-    }
-    .ai-ad {
-      display: inline-block;
-      vertical-align: middle;
-      padding: 0 10px;
-      line-height: 1.4;
-      text-align: left;
+    > li {
+      float: left;
+      padding: 0 74px;
+      height: 244px;
+      .data-number {
+        padding: 50px 0 40px;
+        font-size: 34px;
+        strong {
+          font-size: 100px;
+        }
+      }
+      .data-option {
+        font-size: 18px;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
+      }
     }
   }
 }

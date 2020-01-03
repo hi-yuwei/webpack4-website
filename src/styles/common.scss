@@ -1,5 +1,5 @@
 .min-screen {
-  min-width: 1200px;
+  min-width: 1366px;
   overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -31,4 +31,87 @@
 
 .fr {
   float: right;
+}
+
+.nav {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 0;
+  height: 84px;
+  line-height: 36px;
+  color: #fff;
+
+  .nav-logo {
+    margin-left: 84px;
+    font-size: 14px;
+    color: #ccc;
+    a {
+      display: block;
+    }
+    img {
+      width: 108px;
+      vertical-align: middle;
+    }
+    .logo-txt {
+      margin-left: 15px;
+      padding-left: 13px;
+      height: 16px;
+      line-height: 16px;
+      border-left: 1px solid #ccc;
+    }
+  }
+  .nav-menu {
+    font-size: 16px;
+    color: #fff;
+    > li {
+      float: left;
+      margin-right: 44px;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        color: #333;
+        background: rgba(255, 255, 255, 0.95);
+      }
+    }
+  }
+}
+
+.banner {
+  .banner-item {
+    position: relative;
+    .banner-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding: 84px 78px 0;
+      color: #fff;
+      .banner-title {
+        font-size: 40px;
+        font-weight: 400;
+      }
+    }
+    .banner-01 {
+      padding: 126px 9px 9px;
+      .line {
+        margin: 40px 0 22px;
+        width: 126px;
+        height: 1px;
+        background: #fff;
+      }
+      .banner-introduce {
+        font-size: 20px;
+        line-height: 68px;
+      }
+    }
+  }
 }
