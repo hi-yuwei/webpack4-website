@@ -1,7 +1,7 @@
 .product-type {
   position: relative;
   z-index: 999;
-  margin-top: -40px;
+  margin-top: -80px;
   padding: 46px 63px 54px;
   max-width: 1200px;
   background: #fff;
@@ -11,7 +11,7 @@
       float: left;
       padding-left: 30px;
       width: 33.333%;
-      background: red;
+
       .product-list-logo {
         float: left;
         width: 60px;
@@ -19,6 +19,53 @@
       }
       .product-list-content {
         float: left;
+        padding: 8px 0 8px 14px;
+        .product-list-name {
+          margin-bottom: 10px;
+
+          font-size: 18px;
+          color: #303351;
+        }
+        .product-list-txt {
+          font-size: 16px;
+          color: #616881;
+        }
+      }
+    }
+  }
+}
+
+.icredit {
+  .icredit-content {
+    max-width: 1200px;
+    padding: 86px 0 102px;
+    .icredit-image {
+      float: left;
+      width: 600px;
+      height: 466px;
+      background: url("~@/images/icredit_image.png") no-repeat center 100%;
+    }
+    .icredit-text {
+      float: left;
+      padding: 54px 18px 54px 25px;
+      font-size: 20px;
+      color: #303351;
+    }
+    .product-name {
+      display: inline-block;
+      vertical-align: middle;
+      padding-bottom: 19px;
+      border-bottom: 1px solid #303351;
+      .product-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 28px;
+        height: 29px;
+        margin-right: 10px;
+        background: red;
+      }
+      .icredit-icon {
+        background: url("~@/images/icredit_icon.png") no-repeat center center/100%;
       }
     }
   }

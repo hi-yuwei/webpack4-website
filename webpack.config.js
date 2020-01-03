@@ -127,6 +127,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery"
     }),
+
     // 自动清空dist目录
     new CleanWebpackPlugin(),
     // 设置html模板生成路径
@@ -141,6 +142,7 @@ module.exports = {
       template: "./src/views/productService/index.ejs",
       chunks: ["jquery", "index", "productService"]
     }),
+
     new CopyWebpackPlugin([{ from: "./src/static", to: "static" }]),
     // 分离样式到css文件
     new MiniCssExtractPlugin({
