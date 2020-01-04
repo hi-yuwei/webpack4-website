@@ -34,6 +34,39 @@
     }
   }
 }
+.product-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #303351;
+  .product-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 29px;
+    margin-right: 10px;
+    background: red;
+  }
+  .icredit-icon {
+    background: url("~@/images/icredit_icon.png") no-repeat center center/100%;
+  }
+  .iDefend-icon {
+    background: url("~@/images/idefend_icon.png") no-repeat center center/100%;
+  }
+}
+
+.product-introduce {
+  padding: 20px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+.product-introduce-item {
+  margin-top: 24px;
+  h3 {
+    font-size: 18px;
+  }
+}
 
 .icredit {
   .icredit-content {
@@ -43,30 +76,88 @@
       float: left;
       width: 600px;
       height: 466px;
-      background: url("~@/images/icredit_image.png") no-repeat center 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: all 1s ease;
+      }
+      &:hover img {
+        transform: scale(1.2);
+      }
     }
     .icredit-text {
       float: left;
+      width: 600px;
       padding: 54px 18px 54px 25px;
       font-size: 20px;
       color: #303351;
     }
-    .product-name {
-      display: inline-block;
-      vertical-align: middle;
-      padding-bottom: 19px;
-      border-bottom: 1px solid #303351;
-      .product-icon {
-        display: inline-block;
-        vertical-align: middle;
-        width: 28px;
-        height: 29px;
-        margin-right: 10px;
-        background: red;
+  }
+}
+
+.iDefend {
+  padding: 66px 0;
+  background: #f6f8fb;
+  .iDefend-content {
+    max-width: 1200px;
+    .idefend-left-img {
+      margin-top: 55px;
+    }
+  }
+  .iDefend-text {
+    padding-right: 60px;
+  }
+  .iDefend-left {
+    float: left;
+    width: 652px;
+  }
+  .iDefend-right {
+    float: left;
+    width: 518px;
+    .idefend-right-img {
+      position: relative;
+      width: 584px;
+      top: 0;
+      left: -38px;
+    }
+    .iDefend-introduce {
+      padding-left: 18px;
+    }
+  }
+  .idefend-img {
+    width: 100%;
+    overflow: hidden;
+    img {
+      transition: all 1s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
       }
-      .icredit-icon {
-        background: url("~@/images/icredit_icon.png") no-repeat center center/100%;
-      }
+    }
+  }
+}
+
+.gorupee {
+  padding: 110px 0 150px;
+  .gorupee-content {
+    max-width: 1200px;
+  }
+  .gorupee-text {
+    float: left;
+    width: 497px;
+    padding-top: 86px;
+  }
+  .gorupee-image {
+    float: right;
+    width: 678px;
+    height: 499px;
+    overflow: hidden;
+    img {
+      transition: all 1s ease;
+    }
+    &:hover img {
+      transform: scale(1.2);
     }
   }
 }
