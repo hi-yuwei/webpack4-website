@@ -33,7 +33,8 @@ module.exports = {
   // 入口js路径
   entry: {
     index: "./src/views/index/index.js",
-    productService: "./src/views/productService/index.js"
+    productService: "./src/views/productService/index.js",
+    aboutUs: "./src/views/aboutUs/index.js"
   },
 
   // 编译输出配置
@@ -141,6 +142,11 @@ module.exports = {
       filename: "productService.html",
       template: "./src/views/productService/index.ejs",
       chunks: ["jquery", "index", "productService"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "aboutUs.html",
+      template: "./src/views/aboutUs/index.ejs",
+      chunks: ["jquery", "index", "aboutUs"]
     }),
 
     new CopyWebpackPlugin([{ from: "./src/static", to: "static" }]),

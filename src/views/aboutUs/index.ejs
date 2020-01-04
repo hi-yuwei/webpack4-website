@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="次第人工智能-海外金融一站通" />
+    <meta name="keywords" content="次第,次第人工,次第人工智能,人工智能,海外金融" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>次第人工智能-海外金融一站通</title>
+  </head>
+  <body>
+    <section class="min-screen">
+      <div class="content">
+        <%= require('../template/header/index.ejs')() %>
+        <div class="company">
+          <div class="main company-content">
+            <div class="company-title">
+              <p class="company-title-en">
+                <i class="company-title-zs"></i>COMPNAY INTRODUCTION<i class="company-title-zs"></i>
+              </p>
+              <p class="company-title-ch">公司介绍</p>
+            </div>
+            <p class="company-text">
+              杭州次第人工智能科技有限公司创立于2018年，创始团队来自一线互联网的高级管理人员、技术专家、数据专家。创立时就获得千万元人民币天使融资。致力于金融出海服务，系金融科技出海的先驱者和领导者。业务聚焦于完整的信贷业务、风控模型以及调度平台系统及服务输出；基于海量的反欺诈数据以及信用数据调用和数据平台服务；海外金融开放平台；海外金融业务落地咨询及其全面支持。
+            </p>
+            <ul class="company-img clearfix">
+              <li>
+                <img src="<%= require('../../images/company_img_1.png') %>" />
+              </li>
+              <li>
+                <img src="<%= require('../../images/company_img_2.png') %>" />
+              </li>
+              <li>
+                <img src="<%= require('../../images/company_img_3.png') %>" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <%= require('../template/footer/index.ejs')() %>
+      </div>
+    </section>
+  </body>
+</html>
