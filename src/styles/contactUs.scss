@@ -1,0 +1,35 @@
+.contact {
+  padding: 84px 0 106px;
+  .contact-content {
+    max-width: 1200px;
+    .contact-left {
+      float: left;
+      .contact-text {
+        padding-top: 60px;
+        width: 607px;
+        height: 300px;
+
+        .company-name {
+          padding-left: 37px;
+          padding-bottom: 20px;
+          font-size: 18px;
+        }
+        .company-item {
+          line-height: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+    .contact-right {
+      float: right;
+      .contact-map {
+        width: 593px;
+        height: 334px;
+      }
+    }
+  }
+}
+.contact-india {
+  background: #1b2a3f;
+  color: #fff;
+}

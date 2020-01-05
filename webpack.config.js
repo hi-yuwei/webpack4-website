@@ -34,7 +34,8 @@ module.exports = {
   entry: {
     index: "./src/views/index/index.js",
     productService: "./src/views/productService/index.js",
-    aboutUs: "./src/views/aboutUs/index.js"
+    aboutUs: "./src/views/aboutUs/index.js",
+    contactUs: "./src/views/contactUs/index.js"
   },
 
   // 编译输出配置
@@ -147,6 +148,11 @@ module.exports = {
       filename: "aboutUs.html",
       template: "./src/views/aboutUs/index.ejs",
       chunks: ["jquery", "index", "aboutUs"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contactUs.html",
+      template: "./src/views/contactUs/index.ejs",
+      chunks: ["jquery", "index", "contactUs"]
     }),
 
     new CopyWebpackPlugin([{ from: "./src/static", to: "static" }]),
