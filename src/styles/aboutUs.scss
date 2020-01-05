@@ -46,4 +46,30 @@
       }
     }
   }
+  .company-country {
+    padding: 0 48px;
+    > li {
+      float: left;
+      width: 120px;
+      font-size: 14px;
+      text-align: center;
+      color: #191c3d;
+      img {
+        height: 120px;
+        margin-bottom: 26px;
+      }
+      &:not(:last-child) {
+        margin-right: 74px;
+      }
+    }
+  }
+}
+
+.aboutUs-banner {
+  height: 276px;
+  line-height: 276px;
+  font-size: 34px;
+  text-align: center;
+  color: #fff;
+  background: url("~@/images/company_banner.png") no-repeat center center / 100%;
 }
