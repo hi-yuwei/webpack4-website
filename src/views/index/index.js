@@ -7,6 +7,7 @@ import Swiper from "swiperJS"
 import "swiper/css/swiper.min.css"
 
 $(document).ready(function() {
+  /* 轮播图 */
   var mySwiper = new Swiper(".swiper-container", {
     // 如果需要分页器
     pagination: {
@@ -17,11 +18,11 @@ $(document).ready(function() {
     },
     autoplay: true
   })
-})
 
-var abc = () => {
-  console.log(111)
-}
-abc()
+  let urlHash = location.hash || "#index"
+  urlHash = urlHash.replace("#", "")
+
+  document.querySelector(`.js-nav-menu>.js-${urlHash}`).classList.add("current-nav")
+})
 
 console.log(SERVICE_URL)
