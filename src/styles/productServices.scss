@@ -16,6 +16,8 @@
         float: left;
         width: 60px;
         height: 60px;
+        border-radius: 50%;
+        background: #f8f8f8;
       }
       .product-list-content {
         float: left;
@@ -62,6 +64,7 @@
   padding: 20px 0;
   line-height: 1.6;
   font-size: 14px;
+  color: #474964;
   text-align: justify;
 }
 .product-introduce-item {

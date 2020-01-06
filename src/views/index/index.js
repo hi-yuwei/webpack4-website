@@ -14,7 +14,7 @@ $(document).ready(function() {
       bulletClass: "my-bullet",
       bulletActiveClass: "my-bullet-active"
     },
-    autoplay: true
+    autoplay: false
   })
 })
 

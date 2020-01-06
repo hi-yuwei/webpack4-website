@@ -4,32 +4,7 @@
     width: 992px;
     margin: 0 auto;
   }
-  .company-title {
-    font-size: 24px;
-    color: #191c3d;
-    line-height: 1.2;
-    text-align: center;
-    .company-title-zs {
-      margin: 0 18px;
 
-      &::before,
-      &::after {
-        content: "";
-        display: inline-block;
-        margin: 0 2px;
-        width: 2px;
-        height: 20px;
-        background: #e2e2e2;
-        transform: skew(-20deg);
-      }
-    }
-    .company-title-en {
-      font-size: 28px;
-      color: rgba(68, 68, 68, 0.2);
-      font-family: Arial;
-      font-weight: bold;
-    }
-  }
   .company-text {
     padding: 38px 0 64px;
     text-align: justify;
@@ -54,10 +29,24 @@
       font-size: 14px;
       text-align: center;
       color: #191c3d;
-      img {
+      > div {
+        width: 120px;
         height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
         margin-bottom: 26px;
+        transition: all 1s ease;
+        img {
+          transition: all 1s ease;
+        }
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          img {
+            transform: scale(1.2);
+          }
+        }
       }
+
       &:not(:last-child) {
         margin-right: 74px;
       }

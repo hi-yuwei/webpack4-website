@@ -13,95 +13,91 @@
         <%= require('../template/header/index.ejs')() %>
         <div class="product-service">
           <div class="main product-service-content">
-            <div class="module-title">
-              <h2 class="title-en"><i></i>PRODUCT SERVICE<i></i></h2>
-              <p class="title-ch">产品服务</p>
+            <div class="plate-title">
+              <p class="plate-title-en">
+                <i class="plate-title-decor"></i>PRODUCT SERVICE<i class="plate-title-decor"></i>
+              </p>
+              <p class="plate-title-ch">产品服务</p>
             </div>
             <ul class="product-list clearfix">
               <li>
-                <div class="item">
-                  <div class="item-card item-back">
-                    <h3 class="product-item-title">iDefend-数据智能决策平台</h3>
-                    <p class="product-item-content">
-                      是通用、独立、专业的反欺诈及大数据风控决策AutoML平台。面向企业的AI数据仓库，高度自动化的AI中台。丰富的工业化模组，深度服务于金融、信贷、支付、电商...
-                    </p>
-                    <a href="#" class="product-service-btn">了解更多>></a>
+                <div class="item-card item-front">
+                  <div class="product-logo idefend-logo">
+                    <img src="<%= require('../../images/idefend_logo.png') %>" />
                   </div>
-                  <div class="item-card item-front">
-                    <div class="product-logo idefend-logo">
-                      <img src="<%= require('../../images/idefend_logo.png') %>" />
-                    </div>
-                    <h3 class="product-item-title">iDefend-数据智能决策平台</h3>
-                    <p class="product-item-content">是通用、独立、专业的反欺诈及大数据风控决策AutoML平台...</p>
-                  </div>
+                  <h3 class="product-item-title">iDefend-数据智能决策平台</h3>
+                  <p class="product-item-content">是通用、独立、专业的反欺诈及大数据风控决策AutoML平台...</p>
+                </div>
+                <div class="item-card item-back">
+                  <h3 class="product-item-title">iDefend-数据智能决策平台</h3>
+                  <p class="product-item-content">
+                    是通用、独立、专业的反欺诈及大数据风控决策AutoML平台。面向企业的AI数据仓库，高度自动化的AI中台。丰富的工业化模组，深度服务于金融、信贷、支付、电商...
+                  </p>
+                  <a href="#" class="product-service-btn">了解更多>></a>
                 </div>
               </li>
               <li>
-                <div class="item">
-                  <div class="item-card item-back">
-                    <h3 class="product-item-title">iCredit-信贷业务系统</h3>
-                    <p class="product-item-content">
-                      “iCredit”是面向海外金融市场的专业信贷业务系统，面向有一定规模的金融合作机构，提供个性化的系统解决方案。
-                    </p>
-                    <a href="#" class="product-service-btn">了解更多>></a>
+                <div class="item-card item-front">
+                  <div class="product-logo icredit-logo">
+                    <img src="<%= require('../../images/icredit_logo.png') %>" />
                   </div>
-                  <div class="item-card item-front">
-                    <div class="product-logo icredit-logo">
-                      <img src="<%= require('../../images/icredit_logo.png') %>" />
-                    </div>
-                    <h3 class="product-item-title">iCredit-信贷业务系统</h3>
-                    <p class="product-item-content">面向海外金融市场的专业信贷<br />业务系统，面向有一定规模...</p>
-                  </div>
+                  <h3 class="product-item-title">iCredit-信贷业务系统</h3>
+                  <p class="product-item-content">面向海外金融市场的专业信贷<br />业务系统，面向有一定规模...</p>
+                </div>
+                <div class="item-card item-back">
+                  <h3 class="product-item-title">iCredit-信贷业务系统</h3>
+                  <p class="product-item-content">
+                    “iCredit”是面向海外金融市场的专业信贷业务系统，面向有一定规模的金融合作机构，提供个性化的系统解决方案。
+                  </p>
+                  <a href="#" class="product-service-btn">了解更多>></a>
                 </div>
               </li>
               <li>
-                <div class="item">
-                  <div class="item-card item-back">
-                    <h3 class="product-item-title">GoRupee-金融开放平台</h3>
-                    <p class="product-item-content">
-                      “GoRupee”是面向海外金融市场的一体化服务平台，系统、风控、催收、信审、牌照、流量、支付，一站式解决。
-                    </p>
-                    <a href="#" class="product-service-btn">了解更多>></a>
+                <div class="item-card item-front">
+                  <div class="product-logo gorupee-logo">
+                    <img src="<%= require('../../images/gorupee_logo.png') %>" />
                   </div>
-                  <div class="item-card item-front">
-                    <div class="product-logo gorupee-logo">
-                      <img src="<%= require('../../images/gorupee_logo.png') %>" />
-                    </div>
-                    <h3 class="product-item-title">GoRupee-金融开放平台</h3>
-                    <p class="product-item-content">面向海外金融市场的一体化服务<br />平台，系统、风控..</p>
-                  </div>
+                  <h3 class="product-item-title">GoRupee-金融开放平台</h3>
+                  <p class="product-item-content">面向海外金融市场的一体化服务<br />平台，系统、风控..</p>
+                </div>
+                <div class="item-card item-back">
+                  <h3 class="product-item-title">GoRupee-金融开放平台</h3>
+                  <p class="product-item-content">
+                    “GoRupee”是面向海外金融市场的一体化服务平台，系统、风控、催收、信审、牌照、流量、支付，一站式解决。
+                  </p>
+                  <a href="#" class="product-service-btn">了解更多>></a>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="data">
-          <div class="main">
-            <ul class="data-content clearfix">
-              <li>
-                <p class="data-number"><strong>50</strong>亿</p>
-                <p class="data-option">生态交易量</p>
-              </li>
-              <li>
-                <p class="data-number"><strong>20</strong>+</p>
-                <p class="data-option">接入产业数量</p>
-              </li>
-              <li>
-                <p class="data-number"><strong>2000</strong>万+</p>
-                <p class="data-option">服务用户数量</p>
-              </li>
-              <li>
-                <p class="data-number"><strong>10</strong>亿+</p>
-                <p class="data-option">未产业赋能产生消息</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="data-content clearfix">
+            <li>
+              <p class="data-number"><strong>50</strong>亿</p>
+              <p class="data-option">生态交易量</p>
+            </li>
+            <li>
+              <p class="data-number"><strong>20</strong>+</p>
+              <p class="data-option">接入产业数量</p>
+            </li>
+            <li>
+              <p class="data-number"><strong>2000</strong>万+</p>
+              <p class="data-option">服务用户数量</p>
+            </li>
+            <li>
+              <p class="data-number"><strong>10</strong>亿+</p>
+              <p class="data-option">未产业赋能产生消息</p>
+            </li>
+          </ul>
         </div>
         <div class="cooperation">
           <div class="main cooperation-content">
-            <div class="module-title">
-              <h2 class="title-en"><i></i>COOPERATION<i></i></h2>
-              <p class="title-ch">合作</p>
+            <div class="plate-title">
+              <p class="plate-title-en">
+                <i class="plate-title-decor"></i>COOPERATION<i class="plate-title-decor"></i>
+              </p>
+              <p class="plate-title-ch">合作</p>
             </div>
             <p class="slogan">携手共赢，一站式服务</p>
             <ul class="cooperation-list clearfix">
