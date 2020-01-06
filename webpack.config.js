@@ -95,8 +95,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"],
-            plugins: ["@babel/transform-runtime"]
+            presets: ["@babel/preset-env"]
           }
         }
       }
@@ -120,7 +119,8 @@ module.exports = {
   resolve: {
     // 设置别名
     alias: {
-      "@": path.resolve(__dirname, "src") // 这样配置后 @ 可以指向 src 目录
+      "@": path.resolve(__dirname, "src"), // 这样配置后 @ 可以指向 src 目录
+      swiperJS: "swiper/js/swiper.js"
     }
   },
 

@@ -1,8 +1,9 @@
+import "babel-polyfill"
 import "@/styles/reset.css"
 import "@/styles/common.scss"
 import "@/styles/index.scss"
-
-import Swiper from "swiper"
+console.log(333)
+import Swiper from "swiperJS"
 import "swiper/css/swiper.min.css"
 
 $(document).ready(function() {
@@ -14,8 +15,13 @@ $(document).ready(function() {
       bulletClass: "my-bullet",
       bulletActiveClass: "my-bullet-active"
     },
-    autoplay: false
+    autoplay: true
   })
 })
+
+var abc = () => {
+  console.log(111)
+}
+abc()
 
 console.log(SERVICE_URL)
