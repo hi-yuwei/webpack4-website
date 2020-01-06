@@ -1,7 +1,6 @@
 .contact {
   padding: 84px 0 106px;
   .contact-content {
-    max-width: 1200px;
     .contact-left {
       float: left;
       .contact-text {
@@ -18,6 +17,22 @@
           line-height: 40px;
           font-size: 14px;
         }
+        .item-icon {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 7px;
+          width: 30px;
+          height: 30px;
+        }
+        .icon-email {
+          background: url("~@/images/icon_email.png") no-repeat center center / 100%;
+        }
+        .icon-postcode {
+          background: url("~@/images/icon_postcode.png") no-repeat center center / 100%;
+        }
+        .icon-address {
+          background: url("~@/images/icon_address.png") no-repeat center center / 100%;
+        }
       }
     }
     .contact-right {
@@ -30,6 +45,6 @@
   }
 }
 .contact-india {
-  background: #1b2a3f;
   color: #fff;
+  background: #1b2a3f url("~@/images/yindu_map_bg.png") no-repeat center center / 100%;
 }

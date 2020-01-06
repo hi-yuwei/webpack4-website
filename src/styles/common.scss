@@ -1,5 +1,5 @@
 .min-screen {
-  min-width: 1366px;
+  min-width: 1200px;
   overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .main {
-  max-width: 1366px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,6 @@
   color: #fff;
 
   .nav-logo {
-    margin-left: 84px;
     font-size: 14px;
     color: #ccc;
     a {
@@ -135,6 +134,11 @@
     background: #fff;
   }
 }
+.product-service-warp {
+  .swiper-pagination {
+    bottom: 100px !important;
+  }
+}
 
 .footer {
   padding-top: 90px;
@@ -142,9 +146,7 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
   background: #1f2737;
-  .footer-content {
-    max-width: 1215px;
-  }
+
   .footer-nav {
     margin-bottom: 54px;
     .footer-nav-item {
