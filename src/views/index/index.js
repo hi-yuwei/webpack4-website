@@ -19,10 +19,29 @@ $(document).ready(function() {
     autoplay: true
   })
 
-  let urlHash = location.hash || "#index"
-  urlHash = urlHash.replace("#", "")
+  function searchParse() {
+    var resultObj = {}
+    var search = window.location.search
+    if (search && search.length > 1) {
+      var search = search.substring(1)
+      var items = search.split("&")
+      for (var index = 0; index < items.length; index++) {
+        if (!items[index]) {
+          continue
+        }
+        var kv = items[index].split("=")
+        resultObj[kv[0]] = typeof kv[1] === "undefined" ? "" : kv[1]
+      }
+    }
+    return resultObj
+  }
 
-  document.querySelector(`.js-nav-menu>.js-${urlHash}`).classList.add("current-nav")
+  let searchObj = searchParse()
+
+  console.log(searchObj)
+
+  let currentNav = searchObj["nav"] || "index"
+  document.querySelector(`.js-nav-menu>.js-${currentNav}`).classList.add("current-nav")
 })
 
 console.log(SERVICE_URL)

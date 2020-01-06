@@ -179,13 +179,13 @@
 
 .swiper-pagination {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px !important;
   left: 50%;
   transform: translateX(-50%);
   .my-bullet {
     display: inline-block;
     width: 25px;
-    height: 2px;
+    height: 4px;
     cursor: pointer;
     background: rgba(220, 220, 220, 0.5);
     &:not(:last-child) {
